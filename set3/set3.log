@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.30)  24 APR 2014 15:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.30)  24 APR 2014 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,61 +516,59 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
-)
-Package epstopdf Info: Source file: <explicit_Euler.eps>
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package epstopdf Info: Source file: <explicit.eps>
 (epstopdf)                    date: 2014-04-23 21:47:45
 (epstopdf)                    size: 28438 bytes
-(epstopdf)             Output file: <explicit_Euler-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-23 21:51:08
+(epstopdf)             Output file: <explicit-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-24 20:58:10
 (epstopdf)                    size: 14078 bytes
-(epstopdf)             Command: <repstopdf --outfile=explicit_Euler-eps-convert
-ed-to.pdf explicit_Euler.eps>
+(epstopdf)             Command: <repstopdf --outfile=explicit-eps-converted-to.
+pdf explicit.eps>
 (epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 
-<explicit_Euler-eps-converted-to.pdf, id=1, 863.225pt x 366.36874pt>
-File: explicit_Euler-eps-converted-to.pdf Graphic file (type pdf)
+<explicit-eps-converted-to.pdf, id=15, 863.225pt x 366.36874pt>
+File: explicit-eps-converted-to.pdf Graphic file (type pdf)
 
-<use explicit_Euler-eps-converted-to.pdf>
-Package pdftex.def Info: explicit_Euler-eps-converted-to.pdf used on input line
- 119.
+<use explicit-eps-converted-to.pdf>
+Package pdftex.def Info: explicit-eps-converted-to.pdf used on input line 119.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./spring.py)
-Package epstopdf Info: Source file: <explicit_Euler_error.eps>
+ (./spring.py)
+Package epstopdf Info: Source file: <explicit_error.eps>
 (epstopdf)                    date: 2014-04-23 21:54:20
 (epstopdf)                    size: 27130 bytes
-(epstopdf)             Output file: <explicit_Euler_error-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2014-04-23 21:54:25
+(epstopdf)             Output file: <explicit_error-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-24 20:58:11
 (epstopdf)                    size: 14738 bytes
-(epstopdf)             Command: <repstopdf --outfile=explicit_Euler_error-eps-c
-onverted-to.pdf explicit_Euler_error.eps>
+(epstopdf)             Command: <repstopdf --outfile=explicit_error-eps-convert
+ed-to.pdf explicit_error.eps>
 (epstopdf)             \includegraphics on input line 154.
 Package epstopdf Info: Output file is already uptodate.
 
-<explicit_Euler_error-eps-converted-to.pdf, id=16, 863.225pt x 366.36874pt>
-File: explicit_Euler_error-eps-converted-to.pdf Graphic file (type pdf)
+<explicit_error-eps-converted-to.pdf, id=16, 863.225pt x 366.36874pt>
+File: explicit_error-eps-converted-to.pdf Graphic file (type pdf)
 
-<use explicit_Euler_error-eps-converted-to.pdf>
-Package pdftex.def Info: explicit_Euler_error-eps-converted-to.pdf used on inpu
-t line 154.
+<use explicit_error-eps-converted-to.pdf>
+Package pdftex.def Info: explicit_error-eps-converted-to.pdf used on input line
+ 154.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
- [2 <./explicit_Euler-eps-converted-to.pdf>] (./spring.py [3 <./explicit_Euler_
-error-eps-converted-to.pdf>])
+ [2 <./explicit-eps-converted-to.pdf>] [3 <./explicit_error-eps-converted-to.pd
+f>] (./spring.py)
 Package epstopdf Info: Source file: <bigh.eps>
 (epstopdf)                    date: 2014-04-24 01:04:14
 (epstopdf)                    size: 19168 bytes
 (epstopdf)             Output file: <bigh-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 01:06:44
+(epstopdf)                    date: 2014-04-24 20:58:11
 (epstopdf)                    size: 11449 bytes
 (epstopdf)             Command: <repstopdf --outfile=bigh-eps-converted-to.pdf 
 bigh.eps>
 (epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
 
-<bigh-eps-converted-to.pdf, id=59, 863.225pt x 366.36874pt>
+<bigh-eps-converted-to.pdf, id=57, 863.225pt x 366.36874pt>
 File: bigh-eps-converted-to.pdf Graphic file (type pdf)
 
 <use bigh-eps-converted-to.pdf>
@@ -580,108 +578,103 @@ Package epstopdf Info: Source file: <smallh.eps>
 (epstopdf)                    date: 2014-04-24 01:06:36
 (epstopdf)                    size: 18361 bytes
 (epstopdf)             Output file: <smallh-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 01:06:45
+(epstopdf)                    date: 2014-04-24 20:58:12
 (epstopdf)                    size: 10127 bytes
 (epstopdf)             Command: <repstopdf --outfile=smallh-eps-converted-to.pd
 f smallh.eps>
 (epstopdf)             \includegraphics on input line 183.
 Package epstopdf Info: Output file is already uptodate.
 
-<smallh-eps-converted-to.pdf, id=60, 863.225pt x 366.36874pt>
+<smallh-eps-converted-to.pdf, id=58, 863.225pt x 366.36874pt>
 File: smallh-eps-converted-to.pdf Graphic file (type pdf)
 
 <use smallh-eps-converted-to.pdf>
 Package pdftex.def Info: smallh-eps-converted-to.pdf used on input line 183.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
-Package epstopdf Info: Source file: <explicit_Euler_E.eps>
+Package epstopdf Info: Source file: <explicit_E.eps>
 (epstopdf)                    date: 2014-04-24 01:10:59
 (epstopdf)                    size: 13620 bytes
-(epstopdf)             Output file: <explicit_Euler_E-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 01:11:10
+(epstopdf)             Output file: <explicit_E-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-24 20:58:12
 (epstopdf)                    size: 7470 bytes
-(epstopdf)             Command: <repstopdf --outfile=explicit_Euler_E-eps-conve
-rted-to.pdf explicit_Euler_E.eps>
+(epstopdf)             Command: <repstopdf --outfile=explicit_E-eps-converted-t
+o.pdf explicit_E.eps>
 (epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
 
-<explicit_Euler_E-eps-converted-to.pdf, id=61, 863.225pt x 366.36874pt>
-File: explicit_Euler_E-eps-converted-to.pdf Graphic file (type pdf)
+<explicit_E-eps-converted-to.pdf, id=59, 863.225pt x 366.36874pt>
+File: explicit_E-eps-converted-to.pdf Graphic file (type pdf)
 
-<use explicit_Euler_E-eps-converted-to.pdf>
-Package pdftex.def Info: explicit_Euler_E-eps-converted-to.pdf used on input li
-ne 196.
+<use explicit_E-eps-converted-to.pdf>
+Package pdftex.def Info: explicit_E-eps-converted-to.pdf used on input line 196
+.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
- [4 <./bigh-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <implicit_Euler.eps>
+ [4] [5 <./bigh-eps-converted-to.pdf> <./smallh-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <implicit.eps>
 (epstopdf)                    date: 2014-04-24 01:41:09
 (epstopdf)                    size: 24763 bytes
-(epstopdf)             Output file: <implicit_Euler-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 01:45:44
+(epstopdf)             Output file: <implicit-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-24 20:58:13
 (epstopdf)                    size: 12430 bytes
-(epstopdf)             Command: <repstopdf --outfile=implicit_Euler-eps-convert
-ed-to.pdf implicit_Euler.eps>
+(epstopdf)             Command: <repstopdf --outfile=implicit-eps-converted-to.
+pdf implicit.eps>
 (epstopdf)             \includegraphics on input line 250.
 Package epstopdf Info: Output file is already uptodate.
 
-<implicit_Euler-eps-converted-to.pdf, id=85, 863.225pt x 366.36874pt>
-File: implicit_Euler-eps-converted-to.pdf Graphic file (type pdf)
+<implicit-eps-converted-to.pdf, id=106, 863.225pt x 366.36874pt>
+File: implicit-eps-converted-to.pdf Graphic file (type pdf)
 
-<use implicit_Euler-eps-converted-to.pdf>
-Package pdftex.def Info: implicit_Euler-eps-converted-to.pdf used on input line
- 250.
+<use implicit-eps-converted-to.pdf>
+Package pdftex.def Info: implicit-eps-converted-to.pdf used on input line 250.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
-Package epstopdf Info: Source file: <implicit_Euler_error.eps>
+Package epstopdf Info: Source file: <implicit_error.eps>
 (epstopdf)                    date: 2014-04-24 01:42:57
 (epstopdf)                    size: 25155 bytes
-(epstopdf)             Output file: <implicit_Euler_error-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2014-04-24 01:46:34
+(epstopdf)             Output file: <implicit_error-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-24 20:58:13
 (epstopdf)                    size: 13854 bytes
-(epstopdf)             Command: <repstopdf --outfile=implicit_Euler_error-eps-c
-onverted-to.pdf implicit_Euler_error.eps>
+(epstopdf)             Command: <repstopdf --outfile=implicit_error-eps-convert
+ed-to.pdf implicit_error.eps>
 (epstopdf)             \includegraphics on input line 256.
 Package epstopdf Info: Output file is already uptodate.
 
-<implicit_Euler_error-eps-converted-to.pdf, id=86, 863.225pt x 366.36874pt>
-File: implicit_Euler_error-eps-converted-to.pdf Graphic file (type pdf)
+<implicit_error-eps-converted-to.pdf, id=107, 863.225pt x 366.36874pt>
+File: implicit_error-eps-converted-to.pdf Graphic file (type pdf)
 
-<use implicit_Euler_error-eps-converted-to.pdf>
-Package pdftex.def Info: implicit_Euler_error-eps-converted-to.pdf used on inpu
-t line 256.
+<use implicit_error-eps-converted-to.pdf>
+Package pdftex.def Info: implicit_error-eps-converted-to.pdf used on input line
+ 256.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
-Package epstopdf Info: Source file: <implicit_Euler_E.eps>
+Package epstopdf Info: Source file: <implicit_E.eps>
 (epstopdf)                    date: 2014-04-24 01:50:08
 (epstopdf)                    size: 12447 bytes
-(epstopdf)             Output file: <implicit_Euler_E-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 01:50:26
+(epstopdf)             Output file: <implicit_E-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-24 20:58:13
 (epstopdf)                    size: 7430 bytes
-(epstopdf)             Command: <repstopdf --outfile=implicit_Euler_E-eps-conve
-rted-to.pdf implicit_Euler_E.eps>
+(epstopdf)             Command: <repstopdf --outfile=implicit_E-eps-converted-t
+o.pdf implicit_E.eps>
 (epstopdf)             \includegraphics on input line 262.
 Package epstopdf Info: Output file is already uptodate.
 
-<implicit_Euler_E-eps-converted-to.pdf, id=87, 863.225pt x 366.36874pt>
-File: implicit_Euler_E-eps-converted-to.pdf Graphic file (type pdf)
+<implicit_E-eps-converted-to.pdf, id=108, 863.225pt x 366.36874pt>
+File: implicit_E-eps-converted-to.pdf Graphic file (type pdf)
 
-<use implicit_Euler_E-eps-converted-to.pdf>
-Package pdftex.def Info: implicit_Euler_E-eps-converted-to.pdf used on input li
-ne 262.
+<use implicit_E-eps-converted-to.pdf>
+Package pdftex.def Info: implicit_E-eps-converted-to.pdf used on input line 262
+.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
- [5 <./smallh-eps-converted-to.pdf>] [6 <./explicit_Euler_E-eps-converted-to.pd
-f> <./implicit_Euler-eps-converted-to.pdf>] [7 <./implicit_Euler_error-eps-conv
-erted-to.pdf> <./implicit_Euler_E-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <explicit_xv.eps>
 (epstopdf)                    date: 2014-04-24 02:05:00
 (epstopdf)                    size: 31149 bytes
 (epstopdf)             Output file: <explicit_xv-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 02:05:27
+(epstopdf)                    date: 2014-04-24 20:58:14
 (epstopdf)                    size: 14172 bytes
 (epstopdf)             Command: <repstopdf --outfile=explicit_xv-eps-converted-
 to.pdf explicit_xv.eps>
 (epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
 
-<explicit_xv-eps-converted-to.pdf, id=176, 578.16pt x 433.62pt>
+<explicit_xv-eps-converted-to.pdf, id=109, 578.16pt x 433.62pt>
 File: explicit_xv-eps-converted-to.pdf Graphic file (type pdf)
 
 <use explicit_xv-eps-converted-to.pdf>
@@ -692,32 +685,36 @@ Package epstopdf Info: Source file: <implicit_xv.eps>
 (epstopdf)                    date: 2014-04-24 02:05:23
 (epstopdf)                    size: 22852 bytes
 (epstopdf)             Output file: <implicit_xv-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 02:05:27
+(epstopdf)                    date: 2014-04-24 20:58:14
 (epstopdf)                    size: 10490 bytes
 (epstopdf)             Command: <repstopdf --outfile=implicit_xv-eps-converted-
 to.pdf implicit_xv.eps>
 (epstopdf)             \includegraphics on input line 283.
 Package epstopdf Info: Output file is already uptodate.
 
-<implicit_xv-eps-converted-to.pdf, id=177, 578.16pt x 433.62pt>
+<implicit_xv-eps-converted-to.pdf, id=110, 578.16pt x 433.62pt>
 File: implicit_xv-eps-converted-to.pdf Graphic file (type pdf)
 
 <use implicit_xv-eps-converted-to.pdf>
 Package pdftex.def Info: implicit_xv-eps-converted-to.pdf used on input line 28
 3.
 (pdftex.def)             Requested size: 225.4804pt x 169.10449pt.
+ [6 <./explicit_E-eps-converted-to.pdf>]
+[7 <./implicit-eps-converted-to.pdf> <./implicit_error-eps-converted-to.pdf>]
+[8 <./implicit_E-eps-converted-to.pdf> <./explicit_xv-eps-converted-to.pdf> <./
+implicit_xv-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <symplectic.eps>
 (epstopdf)                    date: 2014-04-24 15:05:28
 (epstopdf)                    size: 26451 bytes
 (epstopdf)             Output file: <symplectic-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 15:09:17
+(epstopdf)                    date: 2014-04-24 20:58:14
 (epstopdf)                    size: 13117 bytes
 (epstopdf)             Command: <repstopdf --outfile=symplectic-eps-converted-t
 o.pdf symplectic.eps>
 (epstopdf)             \includegraphics on input line 311.
 Package epstopdf Info: Output file is already uptodate.
 
-<symplectic-eps-converted-to.pdf, id=178, 863.225pt x 366.36874pt>
+<symplectic-eps-converted-to.pdf, id=206, 863.225pt x 366.36874pt>
 File: symplectic-eps-converted-to.pdf Graphic file (type pdf)
 
 <use symplectic-eps-converted-to.pdf>
@@ -728,14 +725,14 @@ Package epstopdf Info: Source file: <symplectic_xv.eps>
 (epstopdf)                    date: 2014-04-24 15:11:02
 (epstopdf)                    size: 29163 bytes
 (epstopdf)             Output file: <symplectic_xv-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 15:11:52
+(epstopdf)                    date: 2014-04-24 20:58:15
 (epstopdf)                    size: 14568 bytes
 (epstopdf)             Command: <repstopdf --outfile=symplectic_xv-eps-converte
 d-to.pdf symplectic_xv.eps>
 (epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
 
-<symplectic_xv-eps-converted-to.pdf, id=179, 578.16pt x 433.62pt>
+<symplectic_xv-eps-converted-to.pdf, id=207, 578.16pt x 433.62pt>
 File: symplectic_xv-eps-converted-to.pdf Graphic file (type pdf)
 
 <use symplectic_xv-eps-converted-to.pdf>
@@ -746,54 +743,57 @@ Package epstopdf Info: Source file: <symplectic_E.eps>
 (epstopdf)                    date: 2014-04-24 15:14:04
 (epstopdf)                    size: 22587 bytes
 (epstopdf)             Output file: <symplectic_E-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 15:16:44
+(epstopdf)                    date: 2014-04-24 20:58:15
 (epstopdf)                    size: 12242 bytes
 (epstopdf)             Command: <repstopdf --outfile=symplectic_E-eps-converted
 -to.pdf symplectic_E.eps>
 (epstopdf)             \includegraphics on input line 328.
 Package epstopdf Info: Output file is already uptodate.
 
-<symplectic_E-eps-converted-to.pdf, id=180, 863.225pt x 366.36874pt>
+<symplectic_E-eps-converted-to.pdf, id=208, 863.225pt x 366.36874pt>
 File: symplectic_E-eps-converted-to.pdf Graphic file (type pdf)
 
 <use symplectic_E-eps-converted-to.pdf>
 Package pdftex.def Info: symplectic_E-eps-converted-to.pdf used on input line 3
 28.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
- [8 <./explicit_xv-eps-converted-to.pdf> <./implicit_xv-eps-converted-to.pdf>] 
-[9 <./symplectic-eps-converted-to.pdf> <./symplectic_xv-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <symplectic_error.eps>
 (epstopdf)                    date: 2014-04-24 15:26:08
 (epstopdf)                    size: 47949 bytes
 (epstopdf)             Output file: <symplectic_error-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 15:28:51
+(epstopdf)                    date: 2014-04-24 20:58:16
 (epstopdf)                    size: 24669 bytes
 (epstopdf)             Command: <repstopdf --outfile=symplectic_error-eps-conve
 rted-to.pdf symplectic_error.eps>
 (epstopdf)             \includegraphics on input line 340.
 Package epstopdf Info: Output file is already uptodate.
 
-<symplectic_error-eps-converted-to.pdf, id=239, 863.225pt x 366.36874pt>
+<symplectic_error-eps-converted-to.pdf, id=209, 863.225pt x 366.36874pt>
 File: symplectic_error-eps-converted-to.pdf Graphic file (type pdf)
 
 <use symplectic_error-eps-converted-to.pdf>
 Package pdftex.def Info: symplectic_error-eps-converted-to.pdf used on input li
 ne 340.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
- [10 <./symplectic_E-eps-converted-to.pdf> <./symplectic_error-eps-converted-to
-.pdf>] (./set3.aux)
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <./symplectic-eps-converted-to.pdf>] [10 <./symplectic_xv-eps-converted-to.p
+df> <./symplectic_E-eps-converted-to.pdf>] [11 <./symplectic_error-eps-converte
+d-to.pdf>] (./set3.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5881 strings out of 493308
- 81853 string characters out of 6143616
- 168355 words of memory out of 5000000
- 9229 multiletter control sequences out of 15000+600000
+ 5895 strings out of 493308
+ 81849 string characters out of 6143616
+ 172355 words of memory out of 5000000
+ 9243 multiletter control sequences out of 15000+600000
  13744 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,14n,42p,266b,1687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,42p,266b,1560s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -806,10 +806,10 @@ m/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf
 -dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texmf-dist/fonts/type1/
 public/txfonts/t1xtt.pfb>
-Output written on set3.pdf (10 pages, 290973 bytes).
+Output written on set3.pdf (11 pages, 292519 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 336 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
