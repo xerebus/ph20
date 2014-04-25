@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.30)  24 APR 2014 22:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.30)  24 APR 2014 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -520,7 +520,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package epstopdf Info: Source file: <explicit.eps>
-(epstopdf)                    date: 2014-04-24 22:07:01
+(epstopdf)                    date: 2014-04-24 22:28:22
 (epstopdf)                    size: 27021 bytes
 (epstopdf)             Output file: <explicit-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=explicit-eps-converted-to.
@@ -530,7 +530,7 @@ runsystem(repstopdf --outfile=explicit-eps-converted-to.pdf explicit.eps)...exe
 cuted safely (allowed).
 
 Package epstopdf Info: Result file: <explicit-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:34
+(epstopdf)                    date: 2014-04-24 22:29:58
 (epstopdf)                    size: 13542 bytes.
 
 <explicit-eps-converted-to.pdf, id=15, 609.27625pt x 284.06125pt>
@@ -541,7 +541,7 @@ Package pdftex.def Info: explicit-eps-converted-to.pdf used on input line 119.
 (pdftex.def)             Requested size: 469.75502pt x 219.01822pt.
  (./spring.py)
 Package epstopdf Info: Source file: <explicit_error.eps>
-(epstopdf)                    date: 2014-04-24 22:07:01
+(epstopdf)                    date: 2014-04-24 22:28:22
 (epstopdf)                    size: 25833 bytes
 (epstopdf)             Output file: <explicit_error-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=explicit_error-eps-convert
@@ -551,7 +551,7 @@ runsystem(repstopdf --outfile=explicit_error-eps-converted-to.pdf explicit_erro
 r.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <explicit_error-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:34
+(epstopdf)                    date: 2014-04-24 22:29:58
 (epstopdf)                    size: 14188 bytes.
 
 <explicit_error-eps-converted-to.pdf, id=16, 609.27625pt x 284.06125pt>
@@ -564,7 +564,7 @@ Package pdftex.def Info: explicit_error-eps-converted-to.pdf used on input line
  [2 <./explicit-eps-converted-to.pdf>] [3 <./explicit_error-eps-converted-to.pd
 f>] (./spring.py)
 Package epstopdf Info: Source file: <bigh.eps>
-(epstopdf)                    date: 2014-04-24 22:07:04
+(epstopdf)                    date: 2014-04-24 22:28:25
 (epstopdf)                    size: 19177 bytes
 (epstopdf)             Output file: <bigh-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=bigh-eps-converted-to.pdf 
@@ -574,7 +574,7 @@ runsystem(repstopdf --outfile=bigh-eps-converted-to.pdf bigh.eps)...executed sa
 fely (allowed).
 
 Package epstopdf Info: Result file: <bigh-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:34
+(epstopdf)                    date: 2014-04-24 22:29:59
 (epstopdf)                    size: 11377 bytes.
 
 <bigh-eps-converted-to.pdf, id=57, 605.26125pt x 284.06125pt>
@@ -584,7 +584,7 @@ File: bigh-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: bigh-eps-converted-to.pdf used on input line 177.
 (pdftex.def)             Requested size: 469.75502pt x 220.46591pt.
 Package epstopdf Info: Source file: <smallh.eps>
-(epstopdf)                    date: 2014-04-24 22:08:15
+(epstopdf)                    date: 2014-04-24 22:29:40
 (epstopdf)                    size: 18362 bytes
 (epstopdf)             Output file: <smallh-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=smallh-eps-converted-to.pd
@@ -594,7 +594,7 @@ runsystem(repstopdf --outfile=smallh-eps-converted-to.pdf smallh.eps)...execute
 d safely (allowed).
 
 Package epstopdf Info: Result file: <smallh-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:35
+(epstopdf)                    date: 2014-04-24 22:29:59
 (epstopdf)                    size: 10092 bytes.
 
 <smallh-eps-converted-to.pdf, id=58, 613.29124pt x 284.06125pt>
@@ -604,7 +604,7 @@ File: smallh-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: smallh-eps-converted-to.pdf used on input line 183.
 (pdftex.def)             Requested size: 469.75502pt x 217.5792pt.
 Package epstopdf Info: Source file: <explicit_E.eps>
-(epstopdf)                    date: 2014-04-24 22:08:16
+(epstopdf)                    date: 2014-04-24 22:29:40
 (epstopdf)                    size: 13543 bytes
 (epstopdf)             Output file: <explicit_E-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=explicit_E-eps-converted-t
@@ -614,7 +614,7 @@ runsystem(repstopdf --outfile=explicit_E-eps-converted-to.pdf explicit_E.eps)..
 .executed safely (allowed).
 
 Package epstopdf Info: Result file: <explicit_E-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:35
+(epstopdf)                    date: 2014-04-24 22:29:59
 (epstopdf)                    size: 7378 bytes.
 
 <explicit_E-eps-converted-to.pdf, id=59, 622.325pt x 284.06125pt>
@@ -626,7 +626,7 @@ Package pdftex.def Info: explicit_E-eps-converted-to.pdf used on input line 196
 (pdftex.def)             Requested size: 469.75502pt x 214.42374pt.
  [4] [5 <./bigh-eps-converted-to.pdf> <./smallh-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <implicit.eps>
-(epstopdf)                    date: 2014-04-24 22:08:16
+(epstopdf)                    date: 2014-04-24 22:29:40
 (epstopdf)                    size: 26292 bytes
 (epstopdf)             Output file: <implicit-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=implicit-eps-converted-to.
@@ -636,7 +636,7 @@ runsystem(repstopdf --outfile=implicit-eps-converted-to.pdf implicit.eps)...exe
 cuted safely (allowed).
 
 Package epstopdf Info: Result file: <implicit-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:36
+(epstopdf)                    date: 2014-04-24 22:30:00
 (epstopdf)                    size: 14185 bytes.
 
 <implicit-eps-converted-to.pdf, id=106, 601.24625pt x 284.06125pt>
@@ -646,7 +646,7 @@ File: implicit-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: implicit-eps-converted-to.pdf used on input line 247.
 (pdftex.def)             Requested size: 469.75502pt x 221.94395pt.
 Package epstopdf Info: Source file: <implicit_error.eps>
-(epstopdf)                    date: 2014-04-24 22:08:16
+(epstopdf)                    date: 2014-04-24 22:29:40
 (epstopdf)                    size: 28246 bytes
 (epstopdf)             Output file: <implicit_error-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=implicit_error-eps-convert
@@ -656,7 +656,7 @@ runsystem(repstopdf --outfile=implicit_error-eps-converted-to.pdf implicit_erro
 r.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <implicit_error-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:36
+(epstopdf)                    date: 2014-04-24 22:30:00
 (epstopdf)                    size: 15191 bytes.
 
 <implicit_error-eps-converted-to.pdf, id=107, 601.24625pt x 284.06125pt>
@@ -667,7 +667,7 @@ Package pdftex.def Info: implicit_error-eps-converted-to.pdf used on input line
  253.
 (pdftex.def)             Requested size: 469.75502pt x 221.94395pt.
 Package epstopdf Info: Source file: <implicit_E.eps>
-(epstopdf)                    date: 2014-04-24 22:08:16
+(epstopdf)                    date: 2014-04-24 22:29:41
 (epstopdf)                    size: 12351 bytes
 (epstopdf)             Output file: <implicit_E-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=implicit_E-eps-converted-t
@@ -677,7 +677,7 @@ runsystem(repstopdf --outfile=implicit_E-eps-converted-to.pdf implicit_E.eps)..
 .executed safely (allowed).
 
 Package epstopdf Info: Result file: <implicit_E-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:36
+(epstopdf)                    date: 2014-04-24 22:30:01
 (epstopdf)                    size: 7329 bytes.
 
 <implicit_E-eps-converted-to.pdf, id=108, 614.295pt x 284.06125pt>
@@ -688,7 +688,7 @@ Package pdftex.def Info: implicit_E-eps-converted-to.pdf used on input line 259
 .
 (pdftex.def)             Requested size: 469.75502pt x 217.22377pt.
 Package epstopdf Info: Source file: <explicit_xv.eps>
-(epstopdf)                    date: 2014-04-24 22:08:17
+(epstopdf)                    date: 2014-04-24 22:29:41
 (epstopdf)                    size: 31069 bytes
 (epstopdf)             Output file: <explicit_xv-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=explicit_xv-eps-converted-
@@ -698,7 +698,7 @@ runsystem(repstopdf --outfile=explicit_xv-eps-converted-to.pdf explicit_xv.eps)
 ...executed safely (allowed).
 
 Package epstopdf Info: Result file: <explicit_xv-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:37
+(epstopdf)                    date: 2014-04-24 22:30:01
 (epstopdf)                    size: 14075 bytes.
 
 <explicit_xv-eps-converted-to.pdf, id=109, 400.49625pt x 400.49625pt>
@@ -709,7 +709,7 @@ Package pdftex.def Info: explicit_xv-eps-converted-to.pdf used on input line 27
 6.
 (pdftex.def)             Requested size: 225.4804pt x 225.48636pt.
 Package epstopdf Info: Source file: <implicit_xv.eps>
-(epstopdf)                    date: 2014-04-24 22:08:17
+(epstopdf)                    date: 2014-04-24 22:29:41
 (epstopdf)                    size: 28613 bytes
 (epstopdf)             Output file: <implicit_xv-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=implicit_xv-eps-converted-
@@ -719,7 +719,7 @@ runsystem(repstopdf --outfile=implicit_xv-eps-converted-to.pdf implicit_xv.eps)
 ...executed safely (allowed).
 
 Package epstopdf Info: Result file: <implicit_xv-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:37
+(epstopdf)                    date: 2014-04-24 22:30:01
 (epstopdf)                    size: 13970 bytes.
 
 <implicit_xv-eps-converted-to.pdf, id=110, 390.45876pt x 400.49625pt>
@@ -734,7 +734,7 @@ Package pdftex.def Info: implicit_xv-eps-converted-to.pdf used on input line 28
 [8 <./implicit_E-eps-converted-to.pdf> <./explicit_xv-eps-converted-to.pdf> <./
 implicit_xv-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <symplectic.eps>
-(epstopdf)                    date: 2014-04-24 22:08:17
+(epstopdf)                    date: 2014-04-24 22:29:42
 (epstopdf)                    size: 27726 bytes
 (epstopdf)             Output file: <symplectic-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=symplectic-eps-converted-t
@@ -744,7 +744,7 @@ runsystem(repstopdf --outfile=symplectic-eps-converted-to.pdf symplectic.eps)..
 .executed safely (allowed).
 
 Package epstopdf Info: Result file: <symplectic-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:38
+(epstopdf)                    date: 2014-04-24 22:30:02
 (epstopdf)                    size: 14739 bytes.
 
 <symplectic-eps-converted-to.pdf, id=207, 601.24625pt x 284.06125pt>
@@ -755,7 +755,7 @@ Package pdftex.def Info: symplectic-eps-converted-to.pdf used on input line 308
 .
 (pdftex.def)             Requested size: 469.75502pt x 221.94395pt.
 Package epstopdf Info: Source file: <symplectic_xv.eps>
-(epstopdf)                    date: 2014-04-24 22:08:18
+(epstopdf)                    date: 2014-04-24 22:29:42
 (epstopdf)                    size: 29340 bytes
 (epstopdf)             Output file: <symplectic_xv-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=symplectic_xv-eps-converte
@@ -765,7 +765,7 @@ runsystem(repstopdf --outfile=symplectic_xv-eps-converted-to.pdf symplectic_xv.
 eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <symplectic_xv-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:38
+(epstopdf)                    date: 2014-04-24 22:30:02
 (epstopdf)                    size: 14619 bytes.
 
 <symplectic_xv-eps-converted-to.pdf, id=208, 390.45876pt x 400.49625pt>
@@ -776,7 +776,7 @@ Package pdftex.def Info: symplectic_xv-eps-converted-to.pdf used on input line
 314.
 (pdftex.def)             Requested size: 469.75502pt x 481.85197pt.
 Package epstopdf Info: Source file: <symplectic_E.eps>
-(epstopdf)                    date: 2014-04-24 22:08:18
+(epstopdf)                    date: 2014-04-24 22:29:42
 (epstopdf)                    size: 25189 bytes
 (epstopdf)             Output file: <symplectic_E-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=symplectic_E-eps-converted
@@ -786,8 +786,8 @@ runsystem(repstopdf --outfile=symplectic_E-eps-converted-to.pdf symplectic_E.ep
 s)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <symplectic_E-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:38
-(epstopdf)                    size: 13084 bytes.
+(epstopdf)                    date: 2014-04-24 22:30:02
+(epstopdf)                    size: 13076 bytes.
 
 <symplectic_E-eps-converted-to.pdf, id=209, 626.34pt x 284.06125pt>
 File: symplectic_E-eps-converted-to.pdf Graphic file (type pdf)
@@ -797,7 +797,7 @@ Package pdftex.def Info: symplectic_E-eps-converted-to.pdf used on input line 3
 25.
 (pdftex.def)             Requested size: 469.75502pt x 213.05406pt.
 Package epstopdf Info: Source file: <symplectic_error.eps>
-(epstopdf)                    date: 2014-04-24 22:08:33
+(epstopdf)                    date: 2014-04-24 22:29:57
 (epstopdf)                    size: 50107 bytes
 (epstopdf)             Output file: <symplectic_error-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=symplectic_error-eps-conve
@@ -807,7 +807,7 @@ runsystem(repstopdf --outfile=symplectic_error-eps-converted-to.pdf symplectic_
 error.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <symplectic_error-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 22:08:39
+(epstopdf)                    date: 2014-04-24 22:30:03
 (epstopdf)                    size: 26176 bytes.
 
 <symplectic_error-eps-converted-to.pdf, id=210, 609.27625pt x 284.06125pt>
@@ -844,7 +844,7 @@ type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/
 texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on set4.pdf (11 pages, 302373 bytes).
+Output written on set4.pdf (11 pages, 302370 bytes).
 PDF statistics:
  338 PDF objects out of 1000 (max. 8388607)
  124 compressed objects within 2 object streams
