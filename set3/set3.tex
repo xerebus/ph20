@@ -108,7 +108,7 @@ v(t+h) &\approx v(t) + h\frac{dv}{dv} \\
 v_{i+1} &= v_i - hx_i.
 \end{align*}
 \begin{minipage}{\textwidth}
-\pythonex[firstline=4, lastline=24]{spring.py}
+\pythonex[firstline=4, lastline=25]{spring.py}
 \end{minipage}
 
 With initial conditions $x_0 = 0$, $v_0 = 5$, and a step
@@ -116,7 +116,7 @@ size $h=0.05$ with a stop time $s=50$, the above subroutine produces
 the numerical solutions for $x(t)$ and $v(t)$ shown in figure \ref{fig:explicit}.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{explicit_Euler.eps}
+\includegraphics[width=\textwidth]{explicit.eps}
 \caption{\label{fig:explicit}Numerical solutions for $x(t)$ and $v(t)$ as calculated
 by the explicit Euler method.}
 \end{figure}
@@ -147,11 +147,11 @@ the difference between the
 explicit Euler method used in section 1 and the analytic method derived
 here. The error is computed in the \pyln{global_error} function:
 \begin{minipage}{\textwidth}
-\pythonex[firstline=67, lastline=90]{spring.py}
+\pythonex[firstline=70, lastline=97]{spring.py}
 \end{minipage}
 
 \begin{figure}
-\includegraphics[width=\textwidth]{explicit_Euler_error.eps}
+\includegraphics[width=\textwidth]{explicit_error.eps}
 \caption{\label{fig:explicit_error}Truncation error:
 difference between the analytic solution and the
 solution calculated from the explicit Euler method.}
@@ -164,7 +164,7 @@ with the following subroutine \pyln{error_vs_h}, which plots the
 maximum truncation error for various $h$ ranging from a given $h_0$ to
 $\frac{h_0}{16}$.
 
-\pythonex[firstline=92, lastline=113]{spring.py}
+\pythonex[firstline=99, lastline=123]{spring.py}
 
 Figure \ref{fig:bigh} shows an exponential trend for various,
 somewhat large $h$ ($h_0 = 0.1)$.
@@ -193,7 +193,7 @@ that the numerical solution does not exhibit energy conservation, instead
 showing energy increasing over time.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{explicit_Euler_E.eps}
+\includegraphics[width=\textwidth]{explicit_E.eps}
 \caption{\label{fig:explicit_E}$E(t)$ as determined from explicit-Euler-method numerical
 solutions to $x(t)$ and $v(t)$.}
 \end{figure}
@@ -241,25 +241,22 @@ We also show the global error between the implicit and analytic solutions
 in figure \ref{fig:implicit_error}.
 
 With the new numerical solutions, we also generate a new solution for
-$E(t)$, plotted in figure \ref{fig:implicit_E}. Solution and error
-figures for both implicit and explicit
-methods are plotted on the same scales for comparison; the energy curves are
-substantially different over time and are plotted on different scales.
+$E(t)$, plotted in figure \ref{fig:implicit_E}. 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{implicit_Euler.eps}
+\includegraphics[width=\textwidth]{implicit.eps}
 \caption{\label{fig:implicit}Numerical solutions for $x(t)$ and $v(t)$ as calculated by
 the implicit Euler method.}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\textwidth]{implicit_Euler_error.eps}
+\includegraphics[width=\textwidth]{implicit_error.eps}
 \caption{\label{fig:implicit_error}Truncation error for
 the implicit Euler method.}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\textwidth]{implicit_Euler_E.eps}
+\includegraphics[width=\textwidth]{implicit_E.eps}
 \caption{\label{fig:implicit_E}$E(t)$ as determined from implicit-Euler-method numerical
 solutions to $x(t)$ and $v(t)$.}
 \end{figure}
