@@ -190,6 +190,6 @@ def plot_symplectic_lag(x_0, v_0, h, s, plotname='symplectic_error.eps'):
     plotter.plot(t, v_sym, color='red', ls='dashed', label='v, symplectic')
     plotter.plot(t, v_act, color='red', ls='solid', label='v, analytic')
     plotter.xlabel('t')
-    plotter.set_xlim(s - 50, s) # rightmost 50 units to show lag at large t
+    plotter.xlim(s - 50, s) # rightmost 50 units to show lag at large t
     plotter.legend()
     plotter.savefig(plotname, format='eps', bbox_inches='tight', pad_inches=0.1)
