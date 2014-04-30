@@ -93,7 +93,7 @@ def plot_eff(func, a, b, exact, showplots='both'):
     if showplots == 'both' or showplots == 'simps':
         plotter.loglog(N_arr, simps_err, color='red', label='Simpsons\'s')
     plotter.xlabel('N')
-    plotter.ylabel('Calculated Value of Integral')
+    plotter.ylabel('Error')
     plotter.legend()
     plotter.show()
 

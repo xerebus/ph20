@@ -167,26 +167,21 @@ The global error is the local error multiplied by the number of subintervals:
 
 \begin{figure}\centering
 \includegraphics[width=\textwidth]{convergence.eps}
-\caption{\label{fig:convergence}Convergence plot showing the effectiveness of the trapezoidal method
+\caption{\label{fig:convergence}Convergence plot showing the errors of the trapezoidal method
 and Simpson's method on the same scale.}
 \end{figure}
 
-\begin{figure}\centering
-\includegraphics[width=\textwidth]{conv_simps.eps}
-\caption{\label{fig:conv_simps}Convergence plot for Simpson's method on the same $x$ scale
-as Figure \ref{fig:convergence}.}
-\end{figure}
-
 We use each of the above functions to evaluate $\int_0^1 e^x dx$ with $N$
-ranging from 10 to $10^3$. Figure \ref{fig:convergence} shows the convergence
-plot for both methods on the same scale, which makes Simpson's method look
-as if it is independent of $N$ relative to the trapezoidal method.
+ranging from 10 to $10^5$. Figure \ref{fig:convergence} shows the convergence
+plot for both methods on the same scale, plotting the error against the
+expected value 1.7182818284590452354.
 
-Clearly, Simpson's method is much more accurate at low $N$. Figure
-\ref{fig:conv_simps} shows the convergence plot for Simpson's method
-separately (but on the same $x$ scale), showing that Simpson's method also
-converges faster (at $\sim10^{1.6}$) than the trapezoidal method (which
-converges at $\sim10^2$).
+Clearly, Simpson's method is much more accurate at low $N$. Furthermore,
+Simpson's method exhibits some odd behavior at very large values of $N$:
+the error tends to oscillate. Our plotting subroutine compares the
+computed value of the integral with the given exact value, and when
+this difference is very low (i.e. lower than $10^{-12}$ or $10^{-13}$)
+we expect the subtraction to yield bogus answers due to roundoff error.
 
 \newpage
 \section{Simpson's method to desired accuracy}
@@ -195,7 +190,7 @@ We write a routine to integrate a function using Simpson's method repeatedly,
 starting with a predefined $N=N_0$, and doubling $N$ each time until the
 relative difference between succesive approximations is less than the requested
 accuracy.
-\pythonex[firstline=98, lastline=117]{defint.py}
+\pythonex[firstline=100, lastline=119]{defint.py}
 
 We use this subroutine to calculate the integrals:
 \begin{align*}
