@@ -68,8 +68,8 @@ def simps(func, a, b, N):
 
     return I
 
-def plot_eff(func, a, b, showplots='both'):
-    '''Plots successive attempts to integrate func(x) from a to b using
+def plot_eff(func, a, b, exact, showplots='both'):
+    '''Plots error against exact in integrating func(x) from a to b using
     the trapezoid and Simpson methods. Set showplots to 'both', 'trap', 
     or 'simps' depending on which plots you want to see.'''
 
@@ -84,12 +84,14 @@ def plot_eff(func, a, b, showplots='both'):
     trap_val = vtrap(func, a, b, N=N_arr)
     simps_val = vsimps(func, a, b, N=N_arr)
 
-    diff = trap_val - simps_val
+    # get errors
+    trap_err = np.abs(trap_val - exact)
+    simps_err = np.abs(simps_val - exact)
 
     if showplots == 'both' or showplots == 'trap':
-        plotter.loglog(N_arr, trap_val, color='blue', label='Trapezoidal')
+        plotter.loglog(N_arr, trap_err, color='blue', label='Trapezoidal')
     if showplots == 'both' or showplots == 'simps':
-        plotter.loglog(N_arr, simps_val, color='red', label='Simpsons\'s')
+        plotter.loglog(N_arr, simps_err, color='red', label='Simpsons\'s')
     plotter.xlabel('N')
     plotter.ylabel('Calculated Value of Integral')
     plotter.legend()
