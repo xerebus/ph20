@@ -1,0 +1,267 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7782,        258]
+NotebookOptionsPosition[      6876,        223]
+NotebookOutlinePosition[      7211,        238]
+CellTagsIndexPosition[      7168,        235]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ StyleBox["Set 5: Symbolic Algebra with ", "Subtitle"],
+ StyleBox["Mathematica", "Subtitle",
+  FontSlant->"Italic"]
+}], "Title",
+ CellChangeTimes->{{3.607885312858596*^9, 3.607885412022011*^9}, {
+   3.607885459446433*^9, 3.607885519523592*^9}, {3.607885564609885*^9, 
+   3.6078856311301107`*^9}, {3.6078857054453*^9, 3.6078859106302767`*^9}, {
+   3.6078859690782413`*^9, 3.6078859963635073`*^9}, {3.607886052434866*^9, 
+   3.607886177403566*^9}, 3.607886286883165*^9, {3.607886339063141*^9, 
+   3.607886367289789*^9}}],
+
+Cell["Part 1", "Subsubtitle",
+ CellChangeTimes->{{3.607886398805078*^9, 3.607886399693783*^9}}],
+
+Cell[TextData[{
+ StyleBox["To explore ", "Text"],
+ StyleBox["Mathematica", "Text",
+  FontSlant->"Italic"],
+ StyleBox["\[CloseCurlyQuote]s functionality, I\[CloseCurlyQuote]ll use it to \
+solve one of the problems from my last Ph1c set.\n\nWe have a bar magnet \
+(modeled as two magnetic monopoles ", "Text"],
+ StyleBox["m ", "Text",
+  FontSlant->"Italic"],
+ StyleBox["a distance ", "Text"],
+ StyleBox["d", "Text",
+  FontSlant->"Italic"],
+ StyleBox[" apart), falling in the ", "Text"],
+ StyleBox["-z", "Text",
+  FontSlant->"Italic"],
+ StyleBox[" direction at a constant velocity ", "Text"],
+ StyleBox["v. ", "Text",
+  FontSlant->"Italic"],
+ StyleBox["On the ", "Text"],
+ StyleBox["xy", "Text",
+  FontSlant->"Italic"],
+ StyleBox[" plane, there is a conducting circle of radius ", "Text"],
+ StyleBox["R", "Text",
+  FontSlant->"Italic"],
+ StyleBox[" centered at the origin.\n\nWe first want to calculate the \
+magnetic flux through the loop as a function of ", "Text"],
+ StyleBox["z,", "Text",
+  FontSlant->"Italic"],
+ StyleBox[" the location of the middle of the magnetic dipole.\n\nLet ", 
+  "Text"],
+ StyleBox[Cell[BoxData[
+  FormBox[
+   StyleBox[
+    SubscriptBox["\[CapitalPhi]", "m"],
+    FontSize->18], TraditionalForm]], "Text",
+  FormatType->"TraditionalForm"], "Text"],
+ StyleBox[" be the flux through the loop caused by a single magnetic \
+monopole. The field caused by a monopole a distance ", "Text"],
+ StyleBox["r", "Text",
+  FontSlant->"Italic"],
+ StyleBox[" away is:", "Text"]
+}], "Text",
+ CellChangeTimes->{3.607886354136242*^9, 3.6078865659491863`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"B", "[", "r_", "]"}], ":=", 
+  FractionBox[
+   RowBox[{
+    SubscriptBox["\[Mu]", "0"], "m"}], 
+   RowBox[{"4", " ", "\[Pi]", " ", 
+    SuperscriptBox["r", "2"]}]]}]], "Input",
+ CellChangeTimes->{{3.607886175416812*^9, 3.607886230730239*^9}, {
+  3.607886289535376*^9, 3.60788629324445*^9}, {3.607886568092298*^9, 
+  3.607886570000691*^9}}],
+
+Cell[TextData[{
+ "At each point inside the loop, the distance ",
+ StyleBox["r = ",
+  FontSlant->"Italic"],
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["\[Rho]", "2"], "+", 
+     SuperscriptBox["z", "2"]}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", where \[Rho] is the distance from the center of the loop."
+}], "Text",
+ CellChangeTimes->{{3.607886333145335*^9, 3.607886334537071*^9}, {
+  3.607886409171753*^9, 3.60788647752096*^9}, {3.607886532391082*^9, 
+  3.6078865340343113`*^9}, {3.60788657398177*^9, 3.607886583649845*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"r", "=", 
+  SqrtBox[
+   RowBox[{
+    SuperscriptBox["\[Rho]", "2"], "+", 
+    SuperscriptBox["z", "2"]}]]}]], "Input",
+ CellChangeTimes->{{3.60788660191921*^9, 3.607886622370805*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  SqrtBox[
+   RowBox[{
+    SuperscriptBox["\[Rho]", "2"], "+", 
+    SuperscriptBox["z", "2"]}]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.60788662330319*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"B", "[", "r", "]"}]], "Input",
+ CellChangeTimes->{{3.607886628161525*^9, 3.6078866618429832`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  FractionBox[
+   RowBox[{
+    SubscriptBox["\[Mu]", "0"], " ", "m"}], 
+   RowBox[{"4", " ", "\[Pi]", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["\[Rho]", "2"], "+", 
+      SuperscriptBox["z", "2"]}], ")"}]}]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.607886630420272*^9, 3.607886662471917*^9}}]
+}, Open  ]],
+
+Cell["\<\
+We redefine the magnetic field as a function of \[Rho]:\
+\>", "Text",
+ CellChangeTimes->{{3.607886973140395*^9, 3.607886986429366*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"B", "[", "\[Rho]_", "]"}], ":=", 
+  FormBox[
+   FractionBox[
+    RowBox[{
+     SubscriptBox["\[Mu]", "0"], " ", "m"}], 
+    RowBox[{"4", " ", "\[Pi]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["\[Rho]", "2"], "+", 
+       SuperscriptBox["z", "2"]}], ")"}]}]],
+   TraditionalForm]}]], "Input",
+ CellChangeTimes->{{3.607886997065771*^9, 3.607887018826518*^9}}],
+
+Cell[TextData[{
+ "To get the flux in the loop, we want to integrate ",
+ StyleBox["B[",
+  FontSlant->"Italic"],
+ "\[Rho]",
+ StyleBox["]",
+  FontSlant->"Italic"],
+ " over the area of the loop:"
+}], "Text",
+ CellChangeTimes->{{3.607886704334835*^9, 3.607886732663001*^9}, {
+  3.6078867646088867`*^9, 3.607886765061741*^9}, {3.607886961030939*^9, 
+  3.607886965622855*^9}, {3.607887027228706*^9, 3.607887031558824*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[CapitalPhi]", "m"], "[", "z_", "]"}], ":=", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", 
+    RowBox[{"2", "\[Pi]"}]], 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", "0", "R"], 
+    RowBox[{
+     RowBox[{"B", "[", "\[Rho]", "]"}], " ", "\[Rho]", 
+     RowBox[{"\[DifferentialD]", "\[Rho]"}], 
+     RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.607886777271659*^9, 3.607886882875736*^9}, {
+  3.6078870392255287`*^9, 3.607887049025113*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["\[CapitalPhi]", "m"], "[", "z", "]"}]], "Input",
+ CellChangeTimes->{{3.607886904349905*^9, 3.607886913992683*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox["1", "4"], " ", 
+   SubscriptBox["\[Mu]", "0"], " ", "m", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"log", "(", 
+      RowBox[{
+       SuperscriptBox["R", "2"], "+", 
+       SuperscriptBox["z", "2"]}], ")"}], "-", 
+     RowBox[{"log", "(", 
+      SuperscriptBox["z", "2"], ")"}]}], ")"}]}], TraditionalForm]], "Output",\
+
+ CellChangeTimes->{3.607886915213633*^9, 3.607887054516621*^9, 
+  3.607887093183373*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{796, 857},
+WindowMargins->{{Automatic, 0}, {Automatic, 20}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 534, 10, 77, "Title"],
+Cell[1116, 34, 95, 1, 34, "Subsubtitle"],
+Cell[1214, 37, 1566, 42, 233, "Text"],
+Cell[2783, 81, 374, 10, 59, "Input"],
+Cell[3160, 93, 571, 15, 64, "Text"],
+Cell[CellGroupData[{
+Cell[3756, 112, 207, 6, 45, "Input"],
+Cell[3966, 120, 190, 6, 43, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4193, 131, 122, 2, 30, "Input"],
+Cell[4318, 135, 345, 10, 56, "Output"]
+}, Open  ]],
+Cell[4678, 148, 145, 3, 32, "Text"],
+Cell[4826, 153, 413, 13, 67, "Input"],
+Cell[5242, 168, 415, 11, 32, "Text"],
+Cell[5660, 181, 539, 14, 52, "Input"],
+Cell[CellGroupData[{
+Cell[6224, 199, 154, 3, 30, "Input"],
+Cell[6381, 204, 467, 15, 85, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
