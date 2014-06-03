@@ -4,13 +4,13 @@
 CC = python2
 
 # all plots
-PLOTS = explicit explicit_error explicit_error_v_h explicit_E explicit_E_log implicit implicit_error implicit_E xv symplectic combined_xv symplectic_E symplectic_error
+PLOTS = explicit.eps explicit_error.eps bigh.eps smallh.eps explicit_E.eps explicit_E_log.eps implicit.eps implicit_error.eps implicit_E.eps explicit_xv.eps implicit_xv.eps symplectic.eps combined_xv.eps symplectic_E.eps symplectic_error.eps
 
 pdf: set4.tex $(PLOTS)
 	pdflatex set4.tex
 
-$(PLOTS): %: autoplots.py spring.py
-	$(CC) autoplots.py $@
+$(PLOTS): %.eps: autoplots.py spring.py
+	$(CC) autoplots.py $*
 
 clean:
 	rm -f *-eps-converted-to.pdf

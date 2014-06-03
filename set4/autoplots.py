@@ -14,7 +14,10 @@ s = 50
 h_0_small = 0.01
 h_0_big = 0.1
 
-print 'Generating plots...'
+if len(sys.argv) > 2:
+    print 'Generating plots...'
+elif len(sys.argv) == 2:
+    print 'Generating single plot...'
 
 if 'explicit' in sys.argv or len(sys.argv) < 2:
     print 'numerical solutions with explicit Euler method'
@@ -24,9 +27,12 @@ if 'explicit_error' in sys.argv or len(sys.argv) < 2:
     print 'explicit method error'
     global_error(x_0, v_0, h, s, explicit_Euler, analytic, plot=True, plotname='explicit_error.eps')
 
-if 'explicit_error_v_h' in sys.argv or len(sys.argv) < 2:
-    print 'explicit method error vs h'
+if 'bigh' in sys.argv or len(sys.argv) < 2:
+    print 'explicit method error vs h, big h'
     error_vs_h(x_0, v_0, h_0_big, s, explicit_Euler, analytic, plot=True, plotname='bigh.eps')
+
+if 'smallh' in sys.argv or len(sys.argv) < 2:
+    print 'explicit method error vs h, small h'
     error_vs_h(x_0, v_0, h_0_small, s, explicit_Euler, analytic, plot=True, plotname='smallh.eps')
 
 if 'explicit_E' in sys.argv or len(sys.argv) < 2:
@@ -49,9 +55,12 @@ if 'implicit_E' in sys.argv or len(sys.argv) < 2:
     print 'implicit method energy'
     plot_E(x_0, v_0, h, s, implicit_Euler, log=False, plotname='implicit_E.eps')
 
-if 'xv' in sys.argv or len(sys.argv) < 2:
-    print 'explicit and implicit method phase space plots'
+if 'explicit_xv' in sys.argv or len(sys.argv) < 2:
+    print 'explicit method phase space plot'
     plot_phase(x_0, v_0, h, s, explicit_Euler, plotname='explicit_xv.eps')
+
+if 'implicit_xv' in sys.argv or len(sys.argv) < 2:
+    print 'implicit method phase space plot'
     plot_phase(x_0, v_0, h, s, implicit_Euler, plotname='implicit_xv.eps')
 
 if 'symplectic' in sys.argv or len(sys.argv) < 2:
