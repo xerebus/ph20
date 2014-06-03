@@ -122,7 +122,7 @@ def error_vs_h(x_0, v_0, h_0, s, method_a, method_b, plot=False, plotname=None):
         plotter.legend()
         plotter.savefig(plotname, format='eps', bbox_inches='tight', pad_inches=0.1)
 
-def plot_E(x_0, v_0, h, s, method, plotname=None):
+def plot_E(x_0, v_0, h, s, method, log=False, plotname=None):
     '''Given a spring numerical solution method, plot E(t) = x^2 + v^2.'''
 
     (t, x, v) = method(x_0, v_0, h, s)
@@ -132,7 +132,10 @@ def plot_E(x_0, v_0, h, s, method, plotname=None):
         plotname = '%s_E.eps' % method
     
     plotter.figure(figsize=(10, 4))
-    plotter.plot(t, E)
+    if log:
+        plotter.semilogy(t, E)
+    else:
+        plotter.plot(t, E)
     plotter.xlabel('t')
     plotter.ylabel('E')
     plotter.savefig(plotname, format='eps', bbox_inches='tight', pad_inches=0.1)
@@ -191,5 +194,23 @@ def plot_symplectic_lag(x_0, v_0, h, s, plotname='symplectic_error.eps'):
     plotter.plot(t, v_act, color='red', ls='solid', label='v, analytic')
     plotter.xlabel('t')
     plotter.xlim(s - 50, s) # rightmost 50 units to show lag at large t
+    plotter.legend()
+    plotter.savefig(plotname, format='eps', bbox_inches='tight', pad_inches=0.1)
+
+
+def plot_2_phase(x_0, v_0, h, s, method_1, method_2, plotname=None):
+    '''Given a spring numerical solution method, plot v vs. x.'''
+
+    (t_1, x_1, v_1) = method_1(x_0, v_0, h, s)
+    (t_2, x_2, v_2) = method_2(x_0, v_0, h, s)
+
+    if plotname is None:
+        plotname = 'combined_xv.eps'
+
+    plotter.figure(figsize=(6, 6))
+    plotter.plot(x_1, v_1, color='blue', label=(method_1.__name__))
+    plotter.plot(x_2, v_2, color='red', label=(method_2.__name__))
+    plotter.xlabel('x')
+    plotter.ylabel('v')
     plotter.legend()
     plotter.savefig(plotname, format='eps', bbox_inches='tight', pad_inches=0.1)

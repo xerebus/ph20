@@ -104,7 +104,7 @@ to this ODE:
 \begin{align*}
 x(t+h) &\approx x(t) + h\frac{dx}{dt} \\
 x_{i+1} &= x_i + hv_i. \\
-v(t+h) &\approx v(t) + h\frac{dv}{dv} \\
+v(t+h) &\approx v(t) + h\frac{dv}{dt} \\
 v_{i+1} &= v_i - hx_i.
 \end{align*}
 \begin{minipage}{\textwidth}
@@ -198,9 +198,16 @@ showing energy increasing over time.
 solutions to $x(t)$ and $v(t)$.}
 \end{figure}
 
-Visually, the trend appears to be quadratic or exponential. A quadratic trend
-is expected since the error trend in $x$ and $v$ (figure \ref{fig:explicit_error}),
-while sinusoidal, appears to be bound above and below by linear curves.
+\begin{figure}
+\includegraphics[width=\textwidth]{explicit_E_log.eps}
+\caption{\label{fig:explicit_E_log}$E(t)$ as determined from explicit-Euler-method numerical
+solutions, with $E$ plotted on a log scale. The linear graph shows that $E(t)$ increases
+exponentially with $t$.}
+\end{figure}
+
+Visually, the trend appears to be quadratic or exponential. By generating
+a log plot in figure \ref{fig:explicit_E_log}, we confirm that growth trend of $E(t)$ is
+indeed exponential.
 
 \section{Implicit Euler method}
 
@@ -302,17 +309,22 @@ to a spring's motion, the amplitude does not change over time in our time frame 
 to $t=50$).
 
 Figure \ref{fig:symplectic_xv} shows the phase-space trajectory, which appears closed
-in our time frame.
+in our time frame. There is a visible offset from the perfect circle traced out
+by the analytic solution: sometimes the symplectic curve is inside the analytic curve,
+and other times it is outside. Since the radius of the
+curve is $\sqrt{E}$, this means we should expect the symplectic Euler method to yield
+small oscillations in $E$. This is exactly what happens: see section 8.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{symplectic.eps}
 \caption{\label{fig:symplectic} Numerical solutions for $x(t)$ and $v(t)$ as calculated
-by the implicit Euler method.}
+by the symplectic Euler method.}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\textwidth]{symplectic_xv.eps}
-\caption{\label{fig:symplectic_xv} Phase-space trajectory for symplectic Euler method.}
+\includegraphics[width=\textwidth]{combined_xv.eps}
+\caption{\label{fig:symplectic_xv} Phase-space trajectory for symplectic Euler
+and analytic methods.}
 \end{figure}
 
 \section{Energy evolution of symplectic Euler method}

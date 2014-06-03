@@ -31,7 +31,11 @@ if 'explicit_error_v_h' in sys.argv or len(sys.argv) < 2:
 
 if 'explicit_E' in sys.argv or len(sys.argv) < 2:
     print 'explicit method energy'
-    plot_E(x_0, v_0, h, s, explicit_Euler, plotname='explicit_E.eps')
+    plot_E(x_0, v_0, h, s, explicit_Euler, log=False, plotname='explicit_E.eps')
+
+if 'explicit_E_log' in sys.argv or len(sys.argv) < 2:
+    print 'explicit method energy log plot'
+    plot_E(x_0, v_0, h, s, explicit_Euler, log=True, plotname='explicit_E_log.eps')
 
 if 'implicit' in sys.argv or len(sys.argv) < 2:
     print 'numerical solutions with implicit Euler method'
@@ -43,7 +47,7 @@ if 'implicit_error' in sys.argv or len(sys.argv) < 2:
 
 if 'implicit_E' in sys.argv or len(sys.argv) < 2:
     print 'implicit method energy'
-    plot_E(x_0, v_0, h, s, implicit_Euler, plotname='implicit_E.eps')
+    plot_E(x_0, v_0, h, s, implicit_Euler, log=False, plotname='implicit_E.eps')
 
 if 'xv' in sys.argv or len(sys.argv) < 2:
     print 'explicit and implicit method phase space plots'
@@ -54,13 +58,13 @@ if 'symplectic' in sys.argv or len(sys.argv) < 2:
     print 'numerical solutions with symplectic Euler method'
     symplectic_Euler(x_0, v_0, h, s, plot=True, plotname='symplectic.eps')
 
-if 'symplectic_xv' in sys.argv or len(sys.argv) < 2:
-    print 'symplectic phase space plot'
-    plot_phase(x_0, v_0, h, s, symplectic_Euler, plotname='symplectic_xv.eps')
+if 'combined_xv' in sys.argv or len(sys.argv) < 2:
+    print 'symplectic and analytical phase space plot'
+    plot_2_phase(x_0, v_0, h, s, symplectic_Euler, analytic, plotname='combined_xv.eps')
 
 if 'symplectic_E' in sys.argv or len(sys.argv) < 2:
     print 'symplectic energy'
-    plot_E(x_0, v_0, h, s, symplectic_Euler, plotname='symplectic_E.eps')
+    plot_E(x_0, v_0, h, s, symplectic_Euler, log=False, plotname='symplectic_E.eps')
 
 if 'symplectic_error' in sys.argv or len(sys.argv) < 2:
     print 'symplectic error lag'

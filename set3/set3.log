@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.30)  24 APR 2014 21:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.30)  28 MAY 2014 15:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -519,44 +519,51 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: File `explicit.eps' not found on input line 119.
+
 Package epstopdf Info: Source file: <explicit.eps>
-(epstopdf)                    date: 2014-04-23 21:47:45
-(epstopdf)                    size: 28438 bytes
 (epstopdf)             Output file: <explicit-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 20:58:10
-(epstopdf)                    size: 14078 bytes
 (epstopdf)             Command: <repstopdf --outfile=explicit-eps-converted-to.
 pdf explicit.eps>
 (epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 
-<explicit-eps-converted-to.pdf, id=15, 863.225pt x 366.36874pt>
-File: explicit-eps-converted-to.pdf Graphic file (type pdf)
+! Package pdftex.def Error: File `explicit-eps-converted-to.pdf' not found.
 
-<use explicit-eps-converted-to.pdf>
-Package pdftex.def Info: explicit-eps-converted-to.pdf used on input line 119.
-(pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ...egraphics[width=\textwidth]{explicit.eps}
+                                                  
+? q
+OK, entering \batchmode...
  (./spring.py)
+
+LaTeX Warning: File `explicit_error.eps' not found on input line 154.
+
 Package epstopdf Info: Source file: <explicit_error.eps>
-(epstopdf)                    date: 2014-04-23 21:54:20
-(epstopdf)                    size: 27130 bytes
 (epstopdf)             Output file: <explicit_error-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 20:58:11
-(epstopdf)                    size: 14738 bytes
 (epstopdf)             Command: <repstopdf --outfile=explicit_error-eps-convert
 ed-to.pdf explicit_error.eps>
 (epstopdf)             \includegraphics on input line 154.
 Package epstopdf Info: Output file is already uptodate.
 
-<explicit_error-eps-converted-to.pdf, id=16, 863.225pt x 366.36874pt>
-File: explicit_error-eps-converted-to.pdf Graphic file (type pdf)
+! Package pdftex.def Error: File `explicit_error-eps-converted-to.pdf' not foun
+d.
 
-<use explicit_error-eps-converted-to.pdf>
-Package pdftex.def Info: explicit_error-eps-converted-to.pdf used on input line
- 154.
-(pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
- [2 <./explicit-eps-converted-to.pdf>] [3 <./explicit_error-eps-converted-to.pd
-f>] (./spring.py)
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154 ...ics[width=\textwidth]{explicit_error.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ [2] [3] (./spring.py [4] [5])
 Package epstopdf Info: Source file: <bigh.eps>
 (epstopdf)                    date: 2014-04-24 01:04:14
 (epstopdf)                    size: 19168 bytes
@@ -568,10 +575,9 @@ bigh.eps>
 (epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
 
-<bigh-eps-converted-to.pdf, id=57, 863.225pt x 366.36874pt>
+<bigh-eps-converted-to.pdf, id=30, 863.225pt x 366.36874pt>
 File: bigh-eps-converted-to.pdf Graphic file (type pdf)
-
-<use bigh-eps-converted-to.pdf>
+ <use bigh-eps-converted-to.pdf>
 Package pdftex.def Info: bigh-eps-converted-to.pdf used on input line 177.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
 Package epstopdf Info: Source file: <smallh.eps>
@@ -585,84 +591,101 @@ f smallh.eps>
 (epstopdf)             \includegraphics on input line 183.
 Package epstopdf Info: Output file is already uptodate.
 
-<smallh-eps-converted-to.pdf, id=58, 863.225pt x 366.36874pt>
+<smallh-eps-converted-to.pdf, id=31, 863.225pt x 366.36874pt>
 File: smallh-eps-converted-to.pdf Graphic file (type pdf)
-
-<use smallh-eps-converted-to.pdf>
+ <use smallh-eps-converted-to.pdf>
 Package pdftex.def Info: smallh-eps-converted-to.pdf used on input line 183.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
+
+LaTeX Warning: File `explicit_E.eps' not found on input line 196.
+
 Package epstopdf Info: Source file: <explicit_E.eps>
-(epstopdf)                    date: 2014-04-24 01:10:59
-(epstopdf)                    size: 13620 bytes
 (epstopdf)             Output file: <explicit_E-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 20:58:12
-(epstopdf)                    size: 7470 bytes
 (epstopdf)             Command: <repstopdf --outfile=explicit_E-eps-converted-t
 o.pdf explicit_E.eps>
 (epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
 
-<explicit_E-eps-converted-to.pdf, id=59, 863.225pt x 366.36874pt>
-File: explicit_E-eps-converted-to.pdf Graphic file (type pdf)
+! Package pdftex.def Error: File `explicit_E-eps-converted-to.pdf' not found.
 
-<use explicit_E-eps-converted-to.pdf>
-Package pdftex.def Info: explicit_E-eps-converted-to.pdf used on input line 196
-.
-(pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
- [4] [5 <./bigh-eps-converted-to.pdf> <./smallh-eps-converted-to.pdf>]
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 ...raphics[width=\textwidth]{explicit_E.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ [6 <./bigh-eps-converted-to.pdf>]
+
+LaTeX Warning: File `implicit.eps' not found on input line 247.
+
 Package epstopdf Info: Source file: <implicit.eps>
-(epstopdf)                    date: 2014-04-24 01:41:09
-(epstopdf)                    size: 24763 bytes
 (epstopdf)             Output file: <implicit-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 20:58:13
-(epstopdf)                    size: 12430 bytes
 (epstopdf)             Command: <repstopdf --outfile=implicit-eps-converted-to.
 pdf implicit.eps>
-(epstopdf)             \includegraphics on input line 250.
+(epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
 
-<implicit-eps-converted-to.pdf, id=106, 863.225pt x 366.36874pt>
-File: implicit-eps-converted-to.pdf Graphic file (type pdf)
+! Package pdftex.def Error: File `implicit-eps-converted-to.pdf' not found.
 
-<use implicit-eps-converted-to.pdf>
-Package pdftex.def Info: implicit-eps-converted-to.pdf used on input line 250.
-(pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 ...egraphics[width=\textwidth]{implicit.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `implicit_error.eps' not found on input line 253.
+
 Package epstopdf Info: Source file: <implicit_error.eps>
-(epstopdf)                    date: 2014-04-24 01:42:57
-(epstopdf)                    size: 25155 bytes
 (epstopdf)             Output file: <implicit_error-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 20:58:13
-(epstopdf)                    size: 13854 bytes
 (epstopdf)             Command: <repstopdf --outfile=implicit_error-eps-convert
 ed-to.pdf implicit_error.eps>
-(epstopdf)             \includegraphics on input line 256.
+(epstopdf)             \includegraphics on input line 253.
 Package epstopdf Info: Output file is already uptodate.
 
-<implicit_error-eps-converted-to.pdf, id=107, 863.225pt x 366.36874pt>
-File: implicit_error-eps-converted-to.pdf Graphic file (type pdf)
+! Package pdftex.def Error: File `implicit_error-eps-converted-to.pdf' not foun
+d.
 
-<use implicit_error-eps-converted-to.pdf>
-Package pdftex.def Info: implicit_error-eps-converted-to.pdf used on input line
- 256.
-(pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.253 ...ics[width=\textwidth]{implicit_error.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `implicit_E.eps' not found on input line 259.
+
 Package epstopdf Info: Source file: <implicit_E.eps>
-(epstopdf)                    date: 2014-04-24 01:50:08
-(epstopdf)                    size: 12447 bytes
 (epstopdf)             Output file: <implicit_E-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-04-24 20:58:13
-(epstopdf)                    size: 7430 bytes
 (epstopdf)             Command: <repstopdf --outfile=implicit_E-eps-converted-t
 o.pdf implicit_E.eps>
-(epstopdf)             \includegraphics on input line 262.
+(epstopdf)             \includegraphics on input line 259.
 Package epstopdf Info: Output file is already uptodate.
 
-<implicit_E-eps-converted-to.pdf, id=108, 863.225pt x 366.36874pt>
-File: implicit_E-eps-converted-to.pdf Graphic file (type pdf)
+! Package pdftex.def Error: File `implicit_E-eps-converted-to.pdf' not found.
 
-<use implicit_E-eps-converted-to.pdf>
-Package pdftex.def Info: implicit_E-eps-converted-to.pdf used on input line 262
-.
-(pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 ...raphics[width=\textwidth]{implicit_E.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Package epstopdf Info: Source file: <explicit_xv.eps>
 (epstopdf)                    date: 2014-04-24 02:05:00
 (epstopdf)                    size: 31149 bytes
@@ -671,15 +694,14 @@ Package epstopdf Info: Source file: <explicit_xv.eps>
 (epstopdf)                    size: 14172 bytes
 (epstopdf)             Command: <repstopdf --outfile=explicit_xv-eps-converted-
 to.pdf explicit_xv.eps>
-(epstopdf)             \includegraphics on input line 279.
+(epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
 
-<explicit_xv-eps-converted-to.pdf, id=109, 578.16pt x 433.62pt>
+<explicit_xv-eps-converted-to.pdf, id=55, 578.16pt x 433.62pt>
 File: explicit_xv-eps-converted-to.pdf Graphic file (type pdf)
-
-<use explicit_xv-eps-converted-to.pdf>
+ <use explicit_xv-eps-converted-to.pdf>
 Package pdftex.def Info: explicit_xv-eps-converted-to.pdf used on input line 27
-9.
+6.
 (pdftex.def)             Requested size: 225.4804pt x 169.10449pt.
 Package epstopdf Info: Source file: <implicit_xv.eps>
 (epstopdf)                    date: 2014-04-24 02:05:23
@@ -689,20 +711,16 @@ Package epstopdf Info: Source file: <implicit_xv.eps>
 (epstopdf)                    size: 10490 bytes
 (epstopdf)             Command: <repstopdf --outfile=implicit_xv-eps-converted-
 to.pdf implicit_xv.eps>
-(epstopdf)             \includegraphics on input line 283.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
-<implicit_xv-eps-converted-to.pdf, id=110, 578.16pt x 433.62pt>
+<implicit_xv-eps-converted-to.pdf, id=56, 578.16pt x 433.62pt>
 File: implicit_xv-eps-converted-to.pdf Graphic file (type pdf)
-
-<use implicit_xv-eps-converted-to.pdf>
+ <use implicit_xv-eps-converted-to.pdf>
 Package pdftex.def Info: implicit_xv-eps-converted-to.pdf used on input line 28
-3.
+0.
 (pdftex.def)             Requested size: 225.4804pt x 169.10449pt.
- [6 <./explicit_E-eps-converted-to.pdf>]
-[7 <./implicit-eps-converted-to.pdf> <./implicit_error-eps-converted-to.pdf>]
-[8 <./implicit_E-eps-converted-to.pdf> <./explicit_xv-eps-converted-to.pdf> <./
-implicit_xv-eps-converted-to.pdf>]
+ [7 <./smallh-eps-converted-to.pdf>] [8] [9] [10] [11]
 Package epstopdf Info: Source file: <symplectic.eps>
 (epstopdf)                    date: 2014-04-24 15:05:28
 (epstopdf)                    size: 26451 bytes
@@ -711,14 +729,13 @@ Package epstopdf Info: Source file: <symplectic.eps>
 (epstopdf)                    size: 13117 bytes
 (epstopdf)             Command: <repstopdf --outfile=symplectic-eps-converted-t
 o.pdf symplectic.eps>
-(epstopdf)             \includegraphics on input line 311.
+(epstopdf)             \includegraphics on input line 308.
 Package epstopdf Info: Output file is already uptodate.
 
-<symplectic-eps-converted-to.pdf, id=206, 863.225pt x 366.36874pt>
+<symplectic-eps-converted-to.pdf, id=93, 863.225pt x 366.36874pt>
 File: symplectic-eps-converted-to.pdf Graphic file (type pdf)
-
-<use symplectic-eps-converted-to.pdf>
-Package pdftex.def Info: symplectic-eps-converted-to.pdf used on input line 311
+ <use symplectic-eps-converted-to.pdf>
+Package pdftex.def Info: symplectic-eps-converted-to.pdf used on input line 308
 .
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
 Package epstopdf Info: Source file: <symplectic_xv.eps>
@@ -729,15 +746,14 @@ Package epstopdf Info: Source file: <symplectic_xv.eps>
 (epstopdf)                    size: 14568 bytes
 (epstopdf)             Command: <repstopdf --outfile=symplectic_xv-eps-converte
 d-to.pdf symplectic_xv.eps>
-(epstopdf)             \includegraphics on input line 317.
+(epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
 
-<symplectic_xv-eps-converted-to.pdf, id=207, 578.16pt x 433.62pt>
+<symplectic_xv-eps-converted-to.pdf, id=94, 578.16pt x 433.62pt>
 File: symplectic_xv-eps-converted-to.pdf Graphic file (type pdf)
-
-<use symplectic_xv-eps-converted-to.pdf>
+ <use symplectic_xv-eps-converted-to.pdf>
 Package pdftex.def Info: symplectic_xv-eps-converted-to.pdf used on input line 
-317.
+314.
 (pdftex.def)             Requested size: 469.75502pt x 352.31538pt.
 Package epstopdf Info: Source file: <symplectic_E.eps>
 (epstopdf)                    date: 2014-04-24 15:14:04
@@ -747,15 +763,14 @@ Package epstopdf Info: Source file: <symplectic_E.eps>
 (epstopdf)                    size: 12242 bytes
 (epstopdf)             Command: <repstopdf --outfile=symplectic_E-eps-converted
 -to.pdf symplectic_E.eps>
-(epstopdf)             \includegraphics on input line 328.
+(epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
 
-<symplectic_E-eps-converted-to.pdf, id=208, 863.225pt x 366.36874pt>
+<symplectic_E-eps-converted-to.pdf, id=95, 863.225pt x 366.36874pt>
 File: symplectic_E-eps-converted-to.pdf Graphic file (type pdf)
-
-<use symplectic_E-eps-converted-to.pdf>
+ <use symplectic_E-eps-converted-to.pdf>
 Package pdftex.def Info: symplectic_E-eps-converted-to.pdf used on input line 3
-28.
+25.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
 Package epstopdf Info: Source file: <symplectic_error.eps>
 (epstopdf)                    date: 2014-04-24 15:26:08
@@ -765,35 +780,34 @@ Package epstopdf Info: Source file: <symplectic_error.eps>
 (epstopdf)                    size: 24669 bytes
 (epstopdf)             Command: <repstopdf --outfile=symplectic_error-eps-conve
 rted-to.pdf symplectic_error.eps>
-(epstopdf)             \includegraphics on input line 340.
+(epstopdf)             \includegraphics on input line 337.
 Package epstopdf Info: Output file is already uptodate.
 
-<symplectic_error-eps-converted-to.pdf, id=209, 863.225pt x 366.36874pt>
+<symplectic_error-eps-converted-to.pdf, id=96, 863.225pt x 366.36874pt>
 File: symplectic_error-eps-converted-to.pdf Graphic file (type pdf)
-
-<use symplectic_error-eps-converted-to.pdf>
+ <use symplectic_error-eps-converted-to.pdf>
 Package pdftex.def Info: symplectic_error-eps-converted-to.pdf used on input li
-ne 340.
+ne 337.
 (pdftex.def)             Requested size: 469.75502pt x 199.3735pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9 <./symplectic-eps-converted-to.pdf>] [10 <./symplectic_xv-eps-converted-to.p
-df> <./symplectic_E-eps-converted-to.pdf>] [11 <./symplectic_error-eps-converte
-d-to.pdf>] (./set3.aux)
+ [12 <./explicit_xv-eps-converted-to.pdf> <./implicit_xv-eps-converted-to.pdf>]
+ [13 <./symplectic-eps-converted-to.pdf> <./symplectic_xv-eps-converted-to.pdf>
+] [14 <./symplectic_E-eps-converted-to.pdf> <./symplectic_error-eps-converted-t
+o.pdf>] (./set3.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5895 strings out of 493308
- 81849 string characters out of 6143616
- 172355 words of memory out of 5000000
- 9243 multiletter control sequences out of 15000+600000
- 13744 words of font info for 53 fonts, out of 8000000 for 9000
+ 5873 strings out of 493308
+ 80972 string characters out of 6143616
+ 182356 words of memory out of 5000000
+ 9220 multiletter control sequences out of 15000+600000
+ 13912 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,14n,42p,266b,1560s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,42p,266b,1691s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -804,12 +818,13 @@ st/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf
--dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texmf-dist/fonts/type1/
-public/txfonts/t1xtt.pfb>
-Output written on set3.pdf (11 pages, 292519 bytes).
+-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/txfonts/t1xbtt.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts
+/t1xtt.pfb>
+Output written on set3.pdf (14 pages, 251178 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 252 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,506 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     13923,        497]
+NotebookOptionsPosition[     12319,        437]
+NotebookOutlinePosition[     12654,        452]
+CellTagsIndexPosition[     12611,        449]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "Set 5, Part 1: Symbolic Algebra with ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"]
+}], "Subtitle",
+ CellChangeTimes->{{3.608489592374219*^9, 3.60848960601055*^9}, {
+  3.609097028324044*^9, 3.609097030416069*^9}}],
+
+Cell[TextData[{
+ "To explore the functionality of ",
+ StyleBox["Mathematica,",
+  FontSlant->"Italic"],
+ " I\[CloseCurlyQuote]ll use it to solve a problem from my Ph1c set last \
+week.\n\nConsider a circuit with a battery of voltage ",
+ StyleBox["V",
+  FontSlant->"Italic"],
+ ", resistor with resistance ",
+ StyleBox["R,",
+  FontSlant->"Italic"],
+ " and inductor with inductance ",
+ StyleBox["L",
+  FontSlant->"Italic"],
+ " in series. The voltage around the single loop must sum to 0, which gives \
+us an ODE for the current ",
+ StyleBox["j:",
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{{3.6084896288642693`*^9, 3.6084897158278513`*^9}, {
+  3.608491417654654*^9, 3.608491435391521*^9}, {3.608492370087669*^9, 
+  3.608492371006361*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ODE", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"V", "-", 
+     RowBox[{
+      RowBox[{"j", "[", "t", "]"}], " ", "R"}], " ", "-", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"j", "'"}], "[", "t", "]"}], " ", "L"}]}], " ", "\[Equal]", 
+    " ", "0"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.608491443995764*^9, 3.608491466631568*^9}, {
+  3.608491509179575*^9, 3.608491512011794*^9}, {3.609094166736455*^9, 
+  3.609094170292572*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"L", " ", 
+       RowBox[{
+        SuperscriptBox["j", "\[Prime]",
+         MultilineFunction->None], "(", "t", ")"}]}]}], "-", 
+     RowBox[{"R", " ", 
+      RowBox[{"j", "(", "t", ")"}]}], "+", "V"}], "\[LongEqual]", "0"}], 
+   "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.60849146870864*^9, 3.6084915126467543`*^9, 
+  3.609094171353056*^9, 3.609702163363448*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{"ODE", ",", 
+   RowBox[{"{", 
+    RowBox[{"j", "[", "t", "]"}], "}"}], ",", 
+   RowBox[{"{", "t", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.608491501962946*^9, 3.608491521455731*^9}, {
+  3.609094173772876*^9, 3.609094176403553*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"j", "(", "t", ")"}], "\[Rule]", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox[
+        TagBox["c",
+         C], "1"], " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"R", " ", "t"}], "L"]}]]}], "+", 
+      FractionBox["V", "R"]}]}], "}"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.608491494548437*^9, 3.6084915222982597`*^9}, 
+   3.609094178478751*^9, 3.609702165422224*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "We define a function for the current ",
+ StyleBox["J(t)",
+  FontSlant->"Italic"],
+ " according to this solution:"
+}], "Text",
+ CellChangeTimes->{{3.6084915312979593`*^9, 3.608491546993425*^9}, {
+  3.60849189949634*^9, 3.608491915497554*^9}, {3.6084923863256207`*^9, 
+  3.608492386723608*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"J", "[", "t_", "]"}], ":=", 
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox[
+      TagBox["c",
+       C], "1"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"R", " ", "t"}], "L"]}]]}], "+", 
+    FractionBox["V", "R"]}],
+   TraditionalForm]}]], "Input",
+ CellChangeTimes->{{3.608491550110425*^9, 3.608491559353463*^9}, {
+  3.6084919177042007`*^9, 3.608491918073935*^9}}],
+
+Cell[TextData[{
+ "We know that at ",
+ StyleBox["t = 0",
+  FontSlant->"Italic"],
+ ", the inductor will fight the current change completely. Thus, ",
+ StyleBox["J(0) = 0.",
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{{3.608491581827713*^9, 3.608491607774785*^9}, {
+  3.608491936746682*^9, 3.6084919390469923`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"J", "[", "0", "]"}], "\[Equal]", "0"}], ",", 
+   RowBox[{"{", 
+    FormBox[
+     SubscriptBox[
+      TagBox["c",
+       C], "1"],
+     TraditionalForm], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.608491609548511*^9, 3.608491638570552*^9}, {
+  3.60849192424942*^9, 3.608491924726905*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox[
+      TagBox["c",
+       C], "1"], "\[Rule]", 
+     RowBox[{"-", 
+      FractionBox["V", "R"]}]}], "}"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.608491621125657*^9, 3.608491638967145*^9}, 
+   3.608491784204102*^9, 3.608491925641676*^9, 3.609094196235023*^9, 
+   3.609702177955467*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Now that we have the complete solution, let us store it as the actual \
+current ",
+ StyleBox["i(t):",
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{{3.6084919490745497`*^9, 3.608491972127005*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"i", "[", "t_", "]"}], "=", 
+  RowBox[{
+   RowBox[{"J", "[", "t", "]"}], "/.", 
+   FormBox[
+    RowBox[{
+     SubscriptBox[
+      TagBox["c",
+       C], "1"], "\[Rule]", 
+     RowBox[{"-", 
+      FractionBox["V", "R"]}]}],
+    TraditionalForm]}]}]], "Input",
+ CellChangeTimes->{{3.6084919731828527`*^9, 3.6084920011075974`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox["V", "R"], "-", 
+   FractionBox[
+    RowBox[{"V", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"R", " ", "t"}], "L"]}]]}], "R"]}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.608491986869459*^9, 3.608492002540988*^9}, 
+   3.6084920644497557`*^9, 3.609094202218492*^9, 3.609702180235367*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Now suppose we allow the circuit to run until some time ",
+ StyleBox["T.",
+  FontSlant->"Italic"],
+ " To calculate the energy delivered by the battery over this time, we \
+integrate power:"
+}], "Text",
+ CellChangeTimes->{{3.608492089723135*^9, 3.6084921547178793`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"batE", " ", "=", " ", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "T"], 
+   RowBox[{
+    RowBox[{"i", "[", "t", "]"}], "V", 
+    RowBox[{"\[DifferentialD]", "t"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.608492157511553*^9, 3.608492177242255*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["V", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"L", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"R", " ", "T"}], "L"]}]], "-", "1"}], ")"}]}], "+", 
+      RowBox[{"R", " ", "T"}]}], ")"}]}], 
+   SuperscriptBox["R", "2"]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6084921785151787`*^9, 3.609094212790071*^9, 
+  3.609702184076579*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "The energy stored in the inductor at time ",
+ StyleBox["T",
+  FontSlant->"Italic"],
+ " is simply:"
+}], "Text",
+ CellChangeTimes->{{3.608492186268229*^9, 3.608492213460187*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"inductorE", " ", "=", " ", 
+  RowBox[{
+   FractionBox["1", "2"], "L", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"i", "[", "T", "]"}], ")"}], "2"]}]}]], "Input",
+ CellChangeTimes->{{3.608492216383608*^9, 3.6084922346408577`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox["1", "2"], " ", "L", " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox["V", "R"], "-", 
+      FractionBox[
+       RowBox[{"V", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"R", " ", "T"}], "L"]}]]}], "R"]}], ")"}], "2"]}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.608492235286817*^9, 3.609094216587883*^9, 
+  3.609702186599679*^9}]
+}, Open  ]],
+
+Cell["\<\
+And the energy dissipated by the resistor over time is also obtained from \
+integrating power. However, the resistor\[CloseCurlyQuote]s voltage changes \
+over time:\
+\>", "Text",
+ CellChangeTimes->{{3.608492241957686*^9, 3.60849227633319*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"resistorE", "=", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "T"], 
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"i", "[", "t", "]"}], ")"}], "2"], "R", 
+    RowBox[{"\[DifferentialD]", "t"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.6084922784109592`*^9, 3.60849230272964*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["V", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"L", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", "R", " ", "T"}], "L"]}]], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"4", " ", 
+          SuperscriptBox["\[ExponentialE]", 
+           FractionBox[
+            RowBox[{"R", " ", "T"}], "L"]]}], "-", "1"}], ")"}]}], "-", 
+      RowBox[{"3", " ", "L"}], "+", 
+      RowBox[{"2", " ", "R", " ", "T"}]}], ")"}]}], 
+   RowBox[{"2", " ", 
+    SuperscriptBox["R", "2"]}]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6084923049944363`*^9, 3.609094225625743*^9, 
+  3.60970219047867*^9}]
+}, Open  ]],
+
+Cell["\<\
+We confirm that energy was conserved:\
+\>", "Text",
+ CellChangeTimes->{{3.608492312303145*^9, 3.608492318534741*^9}, 
+   3.608492411905013*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ediff", "=", 
+  RowBox[{"batE", "-", 
+   RowBox[{"(", 
+    RowBox[{"inductorE", " ", "+", " ", "resistorE"}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.608492324855508*^9, 3.608492334243054*^9}, {
+  3.6090942309603367`*^9, 3.609094239004521*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["V", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"L", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"R", " ", "T"}], "L"]}]], "-", "1"}], ")"}]}], "+", 
+       RowBox[{"R", " ", "T"}]}], ")"}]}], 
+    SuperscriptBox["R", "2"]], "-", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["V", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"L", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{"2", " ", "R", " ", "T"}], "L"]}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"4", " ", 
+           SuperscriptBox["\[ExponentialE]", 
+            FractionBox[
+             RowBox[{"R", " ", "T"}], "L"]]}], "-", "1"}], ")"}]}], "-", 
+       RowBox[{"3", " ", "L"}], "+", 
+       RowBox[{"2", " ", "R", " ", "T"}]}], ")"}]}], 
+    RowBox[{"2", " ", 
+     SuperscriptBox["R", "2"]}]], "-", 
+   RowBox[{
+    FractionBox["1", "2"], " ", "L", " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["V", "R"], "-", 
+       FractionBox[
+        RowBox[{"V", " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"R", " ", "T"}], "L"]}]]}], "R"]}], ")"}], "2"]}]}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.6084923346731997`*^9, 3.609094239681444*^9, 
+  3.609702193434078*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", "Ediff", "]"}]], "Input",
+ CellChangeTimes->{{3.6084923399563913`*^9, 3.60849234472642*^9}, {
+  3.60909424278852*^9, 3.609094244844536*^9}}],
+
+Cell[BoxData[
+ FormBox["0", TraditionalForm]], "Output",
+ CellChangeTimes->{3.608492345145728*^9, 3.60909424562859*^9, 
+  3.609702195542327*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{796, 857},
+WindowMargins->{{Automatic, 0}, {Automatic, 20}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 235, 6, 59, "Subtitle"],
+Cell[817, 30, 745, 21, 90, "Text"],
+Cell[CellGroupData[{
+Cell[1587, 55, 473, 13, 30, "Input"],
+Cell[2063, 70, 475, 14, 36, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2575, 89, 308, 8, 30, "Input"],
+Cell[2886, 99, 541, 17, 54, "Output"]
+}, Open  ]],
+Cell[3442, 119, 310, 8, 30, "Text"],
+Cell[3755, 129, 468, 16, 60, "Input"],
+Cell[4226, 147, 322, 9, 30, "Text"],
+Cell[CellGroupData[{
+Cell[4573, 160, 366, 12, 30, "Input"],
+Cell[4942, 174, 392, 12, 52, "Output"]
+}, Open  ]],
+Cell[5349, 189, 222, 6, 30, "Text"],
+Cell[CellGroupData[{
+Cell[5596, 199, 362, 13, 58, "Input"],
+Cell[5961, 214, 407, 12, 66, "Output"]
+}, Open  ]],
+Cell[6383, 229, 287, 7, 49, "Text"],
+Cell[CellGroupData[{
+Cell[6695, 240, 278, 7, 52, "Input"],
+Cell[6976, 249, 539, 17, 75, "Output"]
+}, Open  ]],
+Cell[7530, 269, 194, 6, 30, "Text"],
+Cell[CellGroupData[{
+Cell[7749, 279, 261, 7, 58, "Input"],
+Cell[8013, 288, 487, 16, 79, "Output"]
+}, Open  ]],
+Cell[8515, 307, 253, 5, 51, "Text"],
+Cell[CellGroupData[{
+Cell[8793, 316, 328, 9, 52, "Input"],
+Cell[9124, 327, 761, 23, 75, "Output"]
+}, Open  ]],
+Cell[9900, 353, 153, 4, 30, "Text"],
+Cell[CellGroupData[{
+Cell[10078, 361, 271, 6, 30, "Input"],
+Cell[10352, 369, 1575, 51, 161, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11964, 425, 180, 3, 30, "Input"],
+Cell[12147, 430, 144, 3, 62, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
